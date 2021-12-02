@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-
+importa os
+os.system("clear")
 def display():
    print('''
                 d8b
