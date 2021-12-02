@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-importa os
+import os
 os.system("clear")
 def display():
    print('''
