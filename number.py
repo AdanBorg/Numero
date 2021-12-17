@@ -16,10 +16,17 @@ d8P' ?88  d8P' ?88  d8P' ?88    88P' ?8b
 display()
 
 import phonenumbers
+#colores
+yellow='\033[93m'
+gren='\033[92m'
+cyan='\033[96m'
+pink='\033[95m'
+red='\033[91m'
+white='\033[97m'
 from phonenumbers import carrier, geocoder,timezone
-print("¡hola!-- por favor ingresa el numero del cual quieres optener informacion-- Recuerda que tienes que poner el codigo del pais ejemplo +52(numero)")
+print(pink + "¡hola!-- por favor ingresa el numero del cual quieres optener informacion-- Recuerda que tienes que poner el codigo del pais ejemplo +52(numero)")
 
-mobileNo = input("Ingresa el numero: ")
+mobileNo = input(red + "Ingresa el numero: ")
 mobileNo = phonenumbers.parse(mobileNo)
 
 #Sona del Orario
@@ -35,4 +42,4 @@ print(geocoder.description_for_number(mobileNo,"en"))
 print("valido mobile numero: ",phonenumbers.is_valid_number(mobileNo))
 
 #cheker de posibilidad validacion numero
-print("cheking possibility of Number :",phonenumbers.is_possible_number(mobileNo))
+print("chekando pacibilidad del  numero :",phonenumbers.is_possible_number(mobileNo))
